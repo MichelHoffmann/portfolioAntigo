@@ -136,7 +136,7 @@ aside > p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 12px;
 }
 
 #container3 > h2{
@@ -150,7 +150,7 @@ aside > p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 120px;
+    gap: 80px;
 }
 
 #box-redes {
@@ -163,9 +163,9 @@ aside > p {
 }
 
 #box-redes > img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
 }
 
 #box-redes > p {
