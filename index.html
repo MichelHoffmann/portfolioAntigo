@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/mh-logo.png" type="image/x-icon">
 
     <!--=========================== FLATICONS ===========================-->
 
 
 
     <!--=========================== CSS ===========================-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <title>Home Page</title>
 </head>
@@ -19,87 +19,60 @@
 <body>
     <!--=========================== HEADER ===========================-->
     <header>
-        <h1>Portfolio</h1>
-        <p>
-            <a href="#">Home</a>
-            <a href="#">About me</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </p>
+        <img src="images/mh-logo.png" alt="Logo MH">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#">Contato</a>
+        </nav>
     </header>
 
-    <!--=========================== MAIN ===========================-->
     <main>
-        <section class="home">
-            <aside>
-                <p>HI THERE👋🏽 I'M</p>
-                <h1>Michel Hoffmann</h1>
-                <p><strong>FRONT-END DEVELOPER 👨🏽‍💻</strong></p>
-                <img src="images/html-icon.png" alt="Icone HTML">
-                <img src="images/css-icon.png" alt="Icone CSS">
-                <img src="images/tailwind-icon.png" alt="Icone Tailwind">
-                <img src="images/js-icon.png" alt="Icone JS">
-                <input type="button" value="Hire Me">
-            </aside> <!-- Fim do Aside-->
 
+<!--=========================== INICIO ===========================-->
+        <aside class="first format" id="home">
+            <p class="primeiro">OLÁ 👋🏽 EU SOU O</p>
+            <h1>Michel Hoffmann</h1>
+            <p class="green"><strong>FRONT-END DEVELOPER 👨🏽‍💻</strong></p>
+            <div class="tecicons">
+                <img src="images/html-icon.png" alt="Icone HTML" title="Icone HTML">
+
+                <img src="images/css-icon.png" alt="Icone CSS" title="Icone CSS">
+
+                <img src="images/tailwind-icon.png" alt="Icone Tailwind" title="Icone Tailwind">
+                
+                <img src="images/js-icon.png" alt="Icone JS" title="Icone JS">
+            </div>
+            <button>Me Encontre</button>
+        </aside> <!-- Fim do Aside-->
 
 <!--=========================== ABOUT ME ===========================-->
+        <aside class="second format" id="sobre">
+            <img src="images/michel-perfil.jpeg" alt="Foto de Michel" class="ftimg">
 
-                <img src="images/micheledit.jpeg" alt="Foto de Michel">
+            <p class="green"><strong>Quem sou eu ----</strong></p>
 
-                <p>Sou um intusiasta da área da tecnologia, apaixonado por <br> tudo que ela pode e tem para nos oferecer. Estou no ramo <br> do desenvolvimento Web à 1 mês e trabalho com <br> as seguintes tecnologias</p>
-                <input type="button" value="Download CV">
+            <p class="sobre">Desenvolvedor <strong>Front-End</strong>, ainda no processo de adquirir experiência. Apaixonado por tecnologia, iniciei minha jornada na programação web em 2022, e graças ao meu foco consegui avançar nos estudos com um bom aproveitamento mais rápido do que o comum. <br><br>
+            Possuo foco no desenvolvimento com JAVASCRIPT , HTML e CSS usando o framework Tailwind. Também estou em processo de aprendizagem do framework React. <br><br>
+            Me considero ágil e proativo, e apto a aprender uma nova linguagem caso seja necessário. <br>
+            Se eu pudessem me definir em 3 palavras, eu escolheria: <strong>esforçado, disciplinado, confiante</strong>.</p>
+            <button>Download CV</button>
+        </aside>
 
+<!--=========================== SERVIÇES ===========================-->
+        <aside class="third format" id="portfolio">
+            <p class="green">Meus Projetos</p>
+        </aside>
 
-            <div class="immg">
-                <img src="images/michel-bg.png" alt="">
-            </div>
-
-            <!--<img title="Esse sou eu ^^" src="images/michel-perfil.jpeg" alt="Foto de perfil"> -->
-
-        </section> <!-- Fim da section home-->
-
-        <section id="container2">
-            <h2>Projects</h2>
-            <div id="projects">
-                <div title="Projeto 1" id="box"> <!-- Project 1-->
-                </div>
-
-                <div title="Projeto 2" id="box"> <!-- Project 2-->
-                </div>
-
-                <div title="Projeto 3" id="box"> <!-- Project 3-->
-                </div>
-            </div>
-        </section><!-- Fim da section 2-->
-
-        <section id="container3">
-            <h2>Contact me</h2>
-            <div id="redes">
-
-                <div id="box-redes"> <!-- Linkedin 1-->
-                    <img src="images/linkedin.png" alt="logo linkedin">
-                    <p>Linkedin</p>
-                </div>
-
-                <div id="box-redes"> <!-- GitHub 2-->
-                    <img src="images/github.png" alt="logo github">
-                    <p><a href="https://github.com/MichelHoffmann" target="_blank" rel="external">Github</a></p>
-                </div>
-
-                <div id="box-redes"> <!-- Instagram 3-->
-                    <img src="images/instagram.png" alt="logo instagram">
-                    <p>Instagram</p>
-                </div>
-
-            </div>
-        </section><!-- Fim da section 3-->
+        <div class="up">
+            <a href="#home">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+</svg>
+            </a>
+           
+        </div>
     </main>
-
-    <!--=========================== FOOTER ===========================-->
-    <footer>
-        <p>Coded whith &#x1F49C by Michel</p>
-    </footer>
-
 </body>
 </html>
