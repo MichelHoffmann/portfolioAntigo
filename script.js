@@ -1,3 +1,3 @@
-var up = document
-
-function movetotop() {}
+function movetotop() {
+  window.scrollTo(0, document.body.scrollHeight)
+}
