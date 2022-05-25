@@ -1,187 +1,187 @@
 @charset "UTF-8";
 
 /*=========================== GOOGLE FONTS ===========================*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
-/* font-family: 'Roboto', sans-serif; */ 
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
 
 /*=========================== VARIABLES CSS ===========================*/
 :root {
+  --bgcolor: hsl(0, 0%, 18%);
 
-    --bgcolor: hsl(0, 0%, 18%);
-
-    font-size: 62.5%; /* 1 rem = 10 px*/
+  font-size: 62.5%; /* 1 rem = 10 px*/
 }
 
 /*=========================== BASE CSS ===========================*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--bgcolor);
-    color: white;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bgcolor);
+  color: white;
 }
 
 /*=========================== CLASS FORMAT ===========================*/
-.green{
-    color: hsl(164, 100%, 50%);
+.green {
+  color: hsl(164, 100%, 50%);
 }
 
-.format{
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+.format {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.ftimg{
-    border-radius: 20px;
-    border: 2px solid hsla(164, 100%, 50%, 0.349);
-    --headerh: 60px;
+.ftimg {
+  border-radius: 20px;
+  border: 2px solid hsla(164, 100%, 50%, 0.349);
+  --headerh: 60px;
 }
 
 /*=========================== MAIN ===========================*/
 
-header{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--bgcolor);
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--bgcolor);
 
-    width: 100%;
-    height: var(--headerh);
-    padding-inline: 20px;
+  width: 100%;
+  height: var(--headerh);
+  padding-inline: 20px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header img{
-    width: 60px;
-    height: 60px;
+header img {
+  width: 60px;
+  height: 60px;
 }
 
 nav a {
-    color: white;
-    margin-left: 5px;
+  color: white;
+  margin-left: 5px;
 }
 
 nav a:hover {
-    color: hsl(164, 100%, 50%);
-    margin-left: 5px;
+  color: hsl(164, 100%, 50%);
+  margin-left: 5px;
 }
 
-.first{
-    height: 615px;
-    padding-block: 130px;
+.first {
+  height: 615px;
+  padding-block: 130px;
 
-    color: white;
+  color: white;
 }
 
-.primeiro{
-     margin-top: 60px;
+.primeiro {
+  margin-top: 60px;
 }
 
+.first h1 {
+  font-size: 7rem;
 
-.first h1{
-    font-size: 7rem;
-
-    margin-block: 30px;
-    line-height: 60px;
+  margin-block: 30px;
+  line-height: 60px;
 }
 
-.tecicons{
-    height: 60px;
-    margin-block: 10px;
+.tecicons {
+  height: 60px;
+  margin-block: 10px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.tecicons img{
-    width: 30px;
-    height: 30px;
+.tecicons img {
+  width: 30px;
+  height: 30px;
 }
 
-button{
-    width: 120px;
-    height: 40px;
-    font-weight: 500;
+button {
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
 
-    border-radius: 25px;
-    border: 2px solid hsl(164, 100%, 50%);
+  border-radius: 25px;
+  border: 2px solid hsl(164, 100%, 50%);
 
-    background-color: var(--bgcolor);
-    color: white;
+  background-color: var(--bgcolor);
+  color: white;
 
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: hsl(164, 100%, 50%);
-    color: var(--bgcolor);
+  background-color: hsl(164, 100%, 50%);
+  color: var(--bgcolor);
 }
 
-.second{
-    height: 615px;
+.second {
+  height: 615px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.second img{
-    margin-top: 60px;
-    width: 150px;
-    height: 150px;
+.second img {
+  margin-top: 60px;
+  width: 150px;
+  height: 150px;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
-.second p{
-    text-align: justify;
+.second p {
+  text-align: justify;
 }
 
-.second .green{
-    margin-bottom: 10px;
+.second .green {
+  margin-bottom: 10px;
 }
 
-.second .sobre{
-    margin-bottom: 20px;
+.second .sobre {
+  margin-bottom: 20px;
 }
 
-.third{
-    height: 615px;
+.third {
+  height: 615px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.third p{
-    margin-top: 60px;
+.third p {
+  margin-top: 60px;
 }
 
-.up svg{
-    color: white;
-    width: 35px;
-    height: 35px;
+.up svg {
+  color: white;
+  width: 35px;
+  height: 35px;
 
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  cursor: pointer;
 }

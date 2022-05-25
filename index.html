@@ -1,78 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/mh-logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/mh-logo.png" type="image/x-icon" />
 
     <!--=========================== FLATICONS ===========================-->
 
-
-
     <!--=========================== CSS ===========================-->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
 
     <title>Home Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--=========================== HEADER ===========================-->
     <header>
-        <img src="images/mh-logo.png" alt="Logo MH">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#sobre">Sobre mim</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#">Contato</a>
-        </nav>
+      <img src="images/mh-logo.png" alt="Logo MH" />
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#">Contato</a>
+      </nav>
     </header>
 
     <main>
+      <!--=========================== INICIO ===========================-->
+      <aside class="first format" id="home">
+        <p class="primeiro">OLÁ 👋🏽 EU SOU O</p>
+        <h1>Michel Hoffmann</h1>
+        <p class="green"><strong>FRONT-END DEVELOPER 👨🏽‍💻</strong></p>
+        <div class="tecicons">
+          <img src="images/html-icon.png" alt="Icone HTML" title="Icone HTML" />
 
-<!--=========================== INICIO ===========================-->
-        <aside class="first format" id="home">
-            <p class="primeiro">OLÁ 👋🏽 EU SOU O</p>
-            <h1>Michel Hoffmann</h1>
-            <p class="green"><strong>FRONT-END DEVELOPER 👨🏽‍💻</strong></p>
-            <div class="tecicons">
-                <img src="images/html-icon.png" alt="Icone HTML" title="Icone HTML">
+          <img src="images/css-icon.png" alt="Icone CSS" title="Icone CSS" />
 
-                <img src="images/css-icon.png" alt="Icone CSS" title="Icone CSS">
+          <img
+            src="images/tailwind-icon.png"
+            alt="Icone Tailwind"
+            title="Icone Tailwind"
+          />
 
-                <img src="images/tailwind-icon.png" alt="Icone Tailwind" title="Icone Tailwind">
-                
-                <img src="images/js-icon.png" alt="Icone JS" title="Icone JS">
-            </div>
-            <button>Me Encontre</button>
-        </aside> <!-- Fim do Aside-->
-
-<!--=========================== ABOUT ME ===========================-->
-        <aside class="second format" id="sobre">
-            <img src="images/michel-perfil.jpeg" alt="Foto de Michel" class="ftimg">
-
-            <p class="green"><strong>Quem sou eu ----</strong></p>
-
-            <p class="sobre">Desenvolvedor <strong>Front-End</strong>, ainda no processo de adquirir experiência. Apaixonado por tecnologia, iniciei minha jornada na programação web em 2022, e graças ao meu foco consegui avançar nos estudos com um bom aproveitamento mais rápido do que o comum. <br><br>
-            Possuo foco no desenvolvimento com JAVASCRIPT , HTML e CSS usando o framework Tailwind. Também estou em processo de aprendizagem do framework React. <br><br>
-            Me considero ágil e proativo, e apto a aprender uma nova linguagem caso seja necessário. <br>
-            Se eu pudessem me definir em 3 palavras, eu escolheria: <strong>esforçado, disciplinado, confiante</strong>.</p>
-            <button>Download CV</button>
-        </aside>
-
-<!--=========================== SERVIÇES ===========================-->
-        <aside class="third format" id="portfolio">
-            <p class="green">Meus Projetos</p>
-        </aside>
-
-        <div class="up">
-            <a href="#home">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-</svg>
-            </a>
-           
+          <img src="images/js-icon.png" alt="Icone JS" title="Icone JS" />
         </div>
+        <button>Me Encontre</button>
+      </aside>
+      <!-- Fim do Aside-->
+
+      <!--=========================== ABOUT ME ===========================-->
+      <aside class="second format" id="sobre">
+        <img
+          src="images/michel-perfil.jpeg"
+          alt="Foto de Michel"
+          class="ftimg"
+        />
+
+        <p class="green"><strong>Quem sou eu ----</strong></p>
+
+        <p class="sobre">
+          Desenvolvedor <strong>Front-End</strong>, ainda no processo de
+          adquirir experiência. Apaixonado por tecnologia, iniciei minha jornada
+          na programação web em 2022, e graças ao meu foco consegui avançar nos
+          estudos com um bom aproveitamento mais rápido do que o comum.
+          <br /><br />
+          Possuo foco no desenvolvimento com JAVASCRIPT , HTML e CSS usando o
+          framework Tailwind. Também estou em processo de aprendizagem do
+          framework React. <br /><br />
+          Me considero ágil e proativo, e apto a aprender uma nova linguagem
+          caso seja necessário. <br />
+          Se eu pudessem me definir em 3 palavras, eu escolheria:
+          <strong>esforçado, disciplinado, confiante</strong>.
+        </p>
+        <button>Download CV</button>
+      </aside>
+
+      <!--=========================== SERVIÇES ===========================-->
+      <aside class="third format" id="portfolio">
+        <p class="green">Meus Projetos</p>
+      </aside>
+
+      <div class="up">
+        <a href="#home">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
     </main>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
