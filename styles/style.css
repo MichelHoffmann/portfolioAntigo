@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
-/*=========================== GOOGLE FONTS ===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
-/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*=========================== VARIABLES CSS ===========================*/
 :root {
-  --bgcolor: hsl(0, 0%, 18%);
+  --bgcolor: hsl(0, 0%, 24%);
+  --navcolor: hsl(0, 0%, 20%);
+  --green: hsl(164, 100%, 50%);
+  --branco: hsl(0, 0%, 100%);
 
   font-size: 62.5%; /* 1 rem = 10 px*/
 }
@@ -24,164 +25,121 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100%;
-
-  font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
   background-color: var(--bgcolor);
-  color: white;
+  color: var(--branco);
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
 }
 
-/*=========================== CLASS FORMAT ===========================*/
-.green {
-  color: hsl(164, 100%, 50%);
+/*=========================== GERAL ===========================*/
+.wrapper {
+  padding-inline: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 7rem;
 }
 
-.format {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
+.button {
+  padding: 1rem 3rem;
+  color: var(--branco);
 
-.ftimg {
+  border: 1px solid var(--green);
   border-radius: 20px;
-  border: 2px solid hsla(164, 100%, 50%, 0.349);
-  --headerh: 60px;
+
+  font-weight: 500;
 }
 
-/*=========================== MAIN ===========================*/
+.button:hover {
+  color: var(--bgcolor);
+  background-color: var(--green);
+}
 
-header {
-  overflow: hidden;
+/*=========================== NAV ===========================*/
+nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--bgcolor);
-
   width: 100%;
-  height: var(--headerh);
-  padding-inline: 20px;
+}
+
+nav.scroll {
+  background-color: var(--navcolor);
+}
+
+nav #navigation {
+  padding: 1.5rem 2rem;
 
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-header img {
-  width: 60px;
-  height: 60px;
+nav #navigation .open-menu {
+  cursor: pointer;
 }
 
-nav a {
-  color: white;
-  margin-left: 5px;
+nav #navigation .close-menu {
+  display: none;
 }
 
-nav a:hover {
-  color: hsl(164, 100%, 50%);
-  margin-left: 5px;
-}
-
-.first {
-  height: 615px;
-  padding-block: 130px;
-
-  color: white;
-}
-
-.primeiro {
-  margin-top: 60px;
-}
-
-.first h1 {
-  font-size: 7rem;
-
-  margin-block: 30px;
-  line-height: 60px;
-}
-
-.tecicons {
-  height: 60px;
-  margin-block: 10px;
+/*=========================== HOME ===========================*/
+#home {
+  text-align: center;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 3rem;
 }
 
-.tecicons img {
-  width: 30px;
-  height: 30px;
+#home p {
+  font-size: 1.7rem;
 }
 
-button {
-  width: 120px;
-  height: 40px;
-  font-weight: 500;
-
-  border-radius: 25px;
-  border: 2px solid hsl(164, 100%, 50%);
-
-  background-color: var(--bgcolor);
-  color: white;
-
-  cursor: pointer;
+#home > p {
+  padding-top: 5.5rem;
 }
 
-button:hover {
-  background-color: hsl(164, 100%, 50%);
-  color: var(--bgcolor);
+#home h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 39px;
 }
 
-.second {
-  height: 615px;
+#home h1 span {
+  color: var(--green);
+}
 
+#home .tech-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
-.second img {
-  margin-top: 60px;
-  width: 150px;
-  height: 150px;
-
-  margin-bottom: 25px;
+#home .tech-icons .icons svg {
+  width: 3rem;
+  height: 3rem;
 }
 
-.second p {
-  text-align: justify;
+#home .tech-icons .icons {
+  display: flex;
+  gap: 2rem;
 }
 
-.second .green {
-  margin-bottom: 10px;
-}
-
-.second .sobre {
-  margin-bottom: 20px;
-}
-
-.third {
-  height: 615px;
-
+/*=========================== ABOUT ===========================*/
+#about {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about img {
+  width: 18rem;
 }
 
-.third p {
-  margin-top: 60px;
-}
-
-.up svg {
-  color: white;
-  width: 35px;
-  height: 35px;
-
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-
-  cursor: pointer;
+#about p span {
+  color: var(--green);
 }
