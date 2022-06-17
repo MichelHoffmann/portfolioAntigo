@@ -197,5 +197,29 @@ nav #navigation .close-menu {
 
 /*====================== CONTACT ======================*/
 #contact {
-  background-color: var(--cinzaMedio);
+  padding-bottom: 5rem;
+}
+
+#contact .social-links {
+  padding-block: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+}
+
+#contact .social-links a path {
+  fill: var(--green-dark);
+}
+
+#contact .social-links a:hover path {
+  fill: var(--green);
+}
+
+/*====================== FOOTER ======================*/
+footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+
+  background-color: var(--cinzaEscuro);
 }
