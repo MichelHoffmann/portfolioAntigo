@@ -2,17 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*=========================== VARIABLES CSS ===========================*/
+/*====================== VARIABLES CSS ======================*/
 :root {
-  --bgcolor: hsl(0, 0%, 24%);
-  --navcolor: hsl(0, 0%, 20%);
+  --cinzaClaro: hsl(0, 0%, 61%);
+  --cinzaMedio: hsl(0, 0%, 35%);
+  --cinzaEscuro: hsl(0, 0%, 24%);
+  --navColor: hsl(0, 0%, 20%);
   --green: hsl(164, 100%, 50%);
+  --green-dark: hsl(164, 100%, 36%);
   --branco: hsl(0, 0%, 100%);
 
   font-size: 62.5%; /* 1 rem = 10 px*/
+
+  --navHeight: 7rem;
 }
 
-/*=========================== BASE CSS ===========================*/
+/*====================== BASE CSS ======================*/
 * {
   margin: 0;
   padding: 0;
@@ -25,18 +30,20 @@ html {
 }
 
 body {
-  background-color: var(--bgcolor);
+  background-color: var(--cinzaEscuro);
   color: var(--branco);
 
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
 }
 
-/*=========================== GERAL ===========================*/
+/*====================== GERAL ======================*/
 .wrapper {
   padding-inline: 2rem;
-  padding-top: 10rem;
-  padding-bottom: 7rem;
+}
+
+section {
+  padding-block: 9rem;
 }
 
 .button {
@@ -47,23 +54,31 @@ body {
   border-radius: 20px;
 
   font-weight: 500;
+  box-shadow: 0px 1px 7px 8px hsla(164, 100%, 36%, 0.294);
 }
 
 .button:hover {
-  color: var(--bgcolor);
+  color: var(--cinzaEscuro);
   background-color: var(--green);
 }
 
-/*=========================== NAV ===========================*/
+section h2 {
+  font-weight: 600;
+  color: var(--green);
+}
+
+/*====================== NAV ======================*/
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: var(--navHeight);
+  z-index: 100;
 }
 
 nav.scroll {
-  background-color: var(--navcolor);
+  background-color: var(--navColor);
 }
 
 nav #navigation {
@@ -82,7 +97,7 @@ nav #navigation .close-menu {
   display: none;
 }
 
-/*=========================== HOME ===========================*/
+/*====================== HOME ======================*/
 #home {
   text-align: center;
 
@@ -129,17 +144,58 @@ nav #navigation .close-menu {
   gap: 2rem;
 }
 
-/*=========================== ABOUT ===========================*/
+/*====================== ABOUT ======================*/
 #about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
+  text-align: center;
 }
+
 #about img {
-  width: 18rem;
+  width: 20rem;
+
+  border-radius: 20px;
+  border: 1px solid var(--green-dark);
 }
 
 #about p span {
   color: var(--green);
+}
+
+/*====================== PROJECTS ======================*/
+#projects h2 {
+  padding-bottom: 4rem;
+}
+
+#projects img {
+  width: 100%;
+  opacity: 0.6;
+  transition: opacity 250ms;
+}
+
+#projects img:hover {
+  opacity: 1;
+}
+
+#projects .dados {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0rem 2.5rem 0rem;
+}
+
+#projects .dados h3 {
+  font-weight: 300;
+}
+
+#projects .dados a {
+  color: var(--green);
+}
+
+/*====================== CONTACT ======================*/
+#contact {
+  background-color: var(--cinzaMedio);
 }
