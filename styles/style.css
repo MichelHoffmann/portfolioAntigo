@@ -246,3 +246,23 @@ footer {
   background-color: var(--cinzaEscuro);
   border-top: 1px solid #0000003e;
 }
+
+#backToTopButton svg {
+  stroke: var(--green);
+}
+
+#backToTopButton {
+  width: 4rem;
+  position: fixed;
+  bottom: 4rem;
+  right: 3rem;
+  transform: translateY(200%);
+}
+
+#backToTopButton.showButton {
+  width: 4rem;
+  position: fixed;
+  bottom: 4rem;
+  right: 3rem;
+  transform: translateY(0%);
+}
