@@ -43,7 +43,7 @@ body {
 }
 
 section {
-  padding-block: 9rem;
+  padding-block: 7rem;
 }
 
 .button {
@@ -65,6 +65,7 @@ section {
 section h2 {
   font-weight: 600;
   color: var(--green);
+  text-align: left;
 }
 
 /*====================== NAV ======================*/
@@ -77,10 +78,6 @@ nav {
   z-index: 100;
 }
 
-nav.scroll {
-  background-color: var(--navColor);
-}
-
 nav #navigation {
   padding: 1.5rem 2rem;
 
@@ -89,8 +86,16 @@ nav #navigation {
   align-items: center;
 }
 
+nav #navigation #logo a svg {
+  width: 7.5rem;
+}
+
 nav #navigation .open-menu {
   cursor: pointer;
+}
+
+nav #navigation .open-menu svg {
+  width: 4rem;
 }
 
 nav #navigation .close-menu {
@@ -106,6 +111,7 @@ nav #navigation .close-menu {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  padding-block: 10rem;
 }
 
 #home p {
@@ -145,7 +151,11 @@ nav #navigation .close-menu {
 }
 
 /*====================== ABOUT ======================*/
-#about {
+#about h2 {
+  padding-bottom: 3rem;
+}
+
+#about .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,17 +201,29 @@ nav #navigation .close-menu {
   font-weight: 300;
 }
 
+#projects .dados .tech {
+  width: 12rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#projects .dados .tech svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 #projects .dados a {
   color: var(--green);
 }
 
 /*====================== CONTACT ======================*/
 #contact {
-  padding-bottom: 5rem;
+  padding-top: 2.7rem;
+  padding-bottom: 0rem;
 }
 
 #contact .social-links {
-  padding-block: 4rem;
+  padding-block: 2rem;
   display: flex;
   justify-content: center;
   gap: 1.7rem;
@@ -222,4 +244,5 @@ footer {
   text-align: center;
 
   background-color: var(--cinzaEscuro);
+  border-top: 1px solid #0000003e;
 }
