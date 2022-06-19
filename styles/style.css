@@ -7,9 +7,11 @@
   --cinzaClaro: hsl(0, 0%, 61%);
   --cinzaMedio: hsl(0, 0%, 35%);
   --cinzaEscuro: hsl(0, 0%, 24%);
+  --cinza-very-dark: hsl(0, 0%, 15%);
   --navColor: hsl(0, 0%, 20%);
   --green: hsl(164, 100%, 50%);
   --green-dark: hsl(164, 100%, 36%);
+  --green-very-dark: hsl(164, 88%, 16%);
   --branco: hsl(0, 0%, 100%);
 
   font-size: 62.5%; /* 1 rem = 10 px*/
@@ -39,7 +41,7 @@ body {
 
 /*====================== GERAL ======================*/
 .wrapper {
-  padding-inline: 2rem;
+  padding-inline: 3rem;
 }
 
 section {
@@ -102,6 +104,10 @@ nav #navigation .close-menu {
   display: none;
 }
 
+nav.scroll {
+  background-color: var(--cinza-very-dark);
+}
+
 /*====================== HOME ======================*/
 #home {
   text-align: center;
@@ -111,15 +117,12 @@ nav #navigation .close-menu {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding-block: 10rem;
+  padding-top: 16rem;
+  padding-bottom: 10rem;
 }
 
 #home p {
   font-size: 1.7rem;
-}
-
-#home > p {
-  padding-top: 5.5rem;
 }
 
 #home h1 {
@@ -190,29 +193,33 @@ nav #navigation .close-menu {
   opacity: 1;
 }
 
-#projects .dados {
+#projects .dados-project {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0rem 2.5rem 0rem;
+
+  padding-bottom: 1.7rem;
 }
 
-#projects .dados h3 {
+#projects .dados-project h3 {
   font-weight: 300;
 }
 
-#projects .dados .tech {
-  width: 12rem;
+#projects .dados-project .info {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-#projects .dados .tech svg {
+#projects .dados-project .info svg {
   width: 2rem;
   height: 2rem;
 }
 
-#projects .dados a {
+#projects .dados-project .info svg:not(:nth-child(1)) {
+  margin-left: 1.2rem;
+}
+
+#projects .dados-project a {
   color: var(--green);
 }
 
@@ -248,21 +255,26 @@ footer {
 }
 
 #backToTopButton svg {
-  stroke: var(--green);
+  stroke: var(--cinzaEscuro);
 }
 
 #backToTopButton {
-  width: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 4rem;
   right: 3rem;
   transform: translateY(200%);
+  transition: 300ms;
+
+  background-color: hsla(164, 100%, 50%, 0.342);
+  border-radius: 50%;
+}
+
+#backToTopButton:hover {
+  background-color: hsla(164, 100%, 50%, 0.829);
 }
 
 #backToTopButton.showButton {
-  width: 4rem;
-  position: fixed;
-  bottom: 4rem;
-  right: 3rem;
   transform: translateY(0%);
 }
