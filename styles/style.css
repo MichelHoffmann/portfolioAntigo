@@ -15,8 +15,6 @@
   --branco: hsl(0, 0%, 100%);
 
   font-size: 62.5%; /* 1 rem = 10 px*/
-
-  --navHeight: 7rem;
 }
 
 /*====================== BASE CSS ======================*/
@@ -41,11 +39,15 @@ body {
 
 /*====================== GERAL ======================*/
 .wrapper {
-  padding-inline: 3rem;
+  padding-inline: 2.7rem;
 }
 
 section {
+  /*
   padding-block: 7.5rem;
+  */
+  padding-top: 9rem;
+  padding-bottom: 2rem;
 }
 
 .button {
@@ -73,7 +75,7 @@ section h2 {
 /*====================== NAV ======================*/
 nav {
   width: 100%;
-  height: var(--navHeight);
+  height: 7rem;
 
   display: flex;
   justify-content: space-between;
@@ -122,7 +124,6 @@ nav .links a:nth-child(1) {
   align-items: center;
   gap: 3rem;
   height: 100vh;
-  background-color: var(--cinzaMedio);
 }
 
 #home p {
@@ -187,17 +188,17 @@ nav .links a:nth-child(1) {
   padding-bottom: 4rem;
 }
 
-#projects img {
+#projects .container-project img {
   width: 100%;
   opacity: 0.6;
   transition: opacity 250ms;
 }
 
-#projects img:hover {
+#projects .container-project img:hover {
   opacity: 1;
 }
 
-#projects .dados-project {
+#projects .container-project .dados-project {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -205,16 +206,16 @@ nav .links a:nth-child(1) {
   padding-bottom: 1.7rem;
 }
 
-#projects .dados-project h3 {
+#projects .container-project .dados-project h3 {
   font-weight: 300;
 }
 
-#projects .dados-project .info {
+#projects .container-project .dados-project .info {
   display: flex;
   flex-direction: column;
 }
 
-#projects .dados-project .info svg {
+#projects .container-project .dados-project .info svg {
   width: 2rem;
   height: 2rem;
 }
@@ -241,11 +242,11 @@ nav .links a:nth-child(1) {
 }
 
 #contact .social-links a path {
-  fill: var(--green-dark);
+  fill: #898989;
 }
 
 #contact .social-links a:hover path {
-  fill: var(--green);
+  fill: var(--green-dark);
 }
 
 /*====================== FOOTER ======================*/
@@ -268,7 +269,7 @@ footer {
   position: fixed;
   bottom: 4rem;
   right: 3rem;
-  transform: translateY(200%);
+  transform: translateY(300%);
   transition: 300ms;
 
   background-color: hsla(164, 100%, 50%, 0.342);
@@ -281,4 +282,38 @@ footer {
 
 #backToTopButton.showButton {
   transform: translateY(0%);
+}
+
+/*====================== RESPONSIVO ======================*/
+@media (min-width: 480px) {
+  /*=============== GERAL ===============*/
+  section h2 {
+    text-align: center;
+  }
+
+  /*=============== ABOUT ===============*/
+  #about .content img {
+    width: 221px;
+  }
+
+  /*=============== PROJECTS ===============*/
+  #projects .container-project {
+    width: 425px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /*=============== ABOUT ===============*/
+  #about .content {
+    width: 100%;
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about .content img {
+    width: 290px;
+  }
 }
