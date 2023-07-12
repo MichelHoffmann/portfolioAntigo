@@ -1,6 +1,10 @@
-# meu-portfolio
- Meu primeiro portfolio
 
-Criação do repositorio do meu Portfolio
+# Meu primeiro Portfolio
 
-Adicionei esta linha remotamente!
+Meu primeiro portfolio feito no inico dos meus estudos, utilizando as tecnologias bases: html e css.
+
+
+## Autores
+
+- [@MichelHoffmann](https://www.linkedin.com/in/michelhoffmann-/)
+
